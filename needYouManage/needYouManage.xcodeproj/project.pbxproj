@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408DE1B52A8A9001F17FD /* AppDelegate.swift */; };
-		608408E11B52A8A9001F17FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408E01B52A8A9001F17FD /* FirstViewController.swift */; };
-		608408E31B52A8A9001F17FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408E21B52A8A9001F17FD /* SecondViewController.swift */; };
+		608408E11B52A8A9001F17FD /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408E01B52A8A9001F17FD /* HabitViewController.swift */; };
+		608408E31B52A8A9001F17FD /* TimeManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408E21B52A8A9001F17FD /* TimeManageViewController.swift */; };
 		608408E61B52A8A9001F17FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608408E41B52A8A9001F17FD /* Main.storyboard */; };
 		608408E81B52A8A9001F17FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608408E71B52A8A9001F17FD /* Images.xcassets */; };
 		608408EB1B52A8A9001F17FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608408E91B52A8A9001F17FD /* LaunchScreen.xib */; };
@@ -30,8 +30,8 @@
 		608408D91B52A8A9001F17FD /* needYouManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = needYouManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608408DD1B52A8A9001F17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608408DE1B52A8A9001F17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		608408E01B52A8A9001F17FD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		608408E21B52A8A9001F17FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		608408E01B52A8A9001F17FD /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
+		608408E21B52A8A9001F17FD /* TimeManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManageViewController.swift; sourceTree = "<group>"; };
 		608408E51B52A8A9001F17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		608408E71B52A8A9001F17FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		608408EA1B52A8A9001F17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,9 +79,9 @@
 		608408DB1B52A8A9001F17FD /* needYouManage */ = {
 			isa = PBXGroup;
 			children = (
+				60F688B51B52ABFE00A9EC8A /* TimeManage */,
+				60F688B41B52ABF400A9EC8A /* Habit */,
 				608408DE1B52A8A9001F17FD /* AppDelegate.swift */,
-				608408E01B52A8A9001F17FD /* FirstViewController.swift */,
-				608408E21B52A8A9001F17FD /* SecondViewController.swift */,
 				608408E41B52A8A9001F17FD /* Main.storyboard */,
 				608408E71B52A8A9001F17FD /* Images.xcassets */,
 				608408E91B52A8A9001F17FD /* LaunchScreen.xib */,
@@ -113,6 +113,22 @@
 				608408F51B52A8A9001F17FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60F688B41B52ABF400A9EC8A /* Habit */ = {
+			isa = PBXGroup;
+			children = (
+				608408E01B52A8A9001F17FD /* HabitViewController.swift */,
+			);
+			name = Habit;
+			sourceTree = "<group>";
+		};
+		60F688B51B52ABFE00A9EC8A /* TimeManage */ = {
+			isa = PBXGroup;
+			children = (
+				608408E21B52A8A9001F17FD /* TimeManageViewController.swift */,
+			);
+			name = TimeManage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608408E31B52A8A9001F17FD /* SecondViewController.swift in Sources */,
+				608408E31B52A8A9001F17FD /* TimeManageViewController.swift in Sources */,
 				608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */,
-				608408E11B52A8A9001F17FD /* FirstViewController.swift in Sources */,
+				608408E11B52A8A9001F17FD /* HabitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +429,7 @@
 				608408FC1B52A8A9001F17FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		608408FD1B52A8A9001F17FD /* Build configuration list for PBXNativeTarget "needYouManageTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				608408FF1B52A8A9001F17FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
