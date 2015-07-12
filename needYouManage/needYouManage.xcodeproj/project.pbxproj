@@ -14,6 +14,8 @@
 		608408E81B52A8A9001F17FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608408E71B52A8A9001F17FD /* Images.xcassets */; };
 		608408EB1B52A8A9001F17FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608408E91B52A8A9001F17FD /* LaunchScreen.xib */; };
 		608408F71B52A8A9001F17FD /* needYouManageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408F61B52A8A9001F17FD /* needYouManageTests.swift */; };
+		60F688C01B52B1E200A9EC8A /* src in Resources */ = {isa = PBXBuildFile; fileRef = 60F688BF1B52B1E200A9EC8A /* src */; };
+		60F688C91B52B35500A9EC8A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F688C81B52B35500A9EC8A /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		608408F01B52A8A9001F17FD /* needYouManageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = needYouManageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608408F51B52A8A9001F17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608408F61B52A8A9001F17FD /* needYouManageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = needYouManageTests.swift; sourceTree = "<group>"; };
+		60F688BF1B52B1E200A9EC8A /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = "../../../Downloads/fmdb-master/src"; sourceTree = "<group>"; };
+		60F688C41B52B2EC00A9EC8A /* needYouManage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "needYouManage-Bridging-Header.h"; sourceTree = "<group>"; };
+		60F688C81B52B35500A9EC8A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F688C91B52B35500A9EC8A /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +85,14 @@
 		608408DB1B52A8A9001F17FD /* needYouManage */ = {
 			isa = PBXGroup;
 			children = (
+				60F688BD1B52B1BB00A9EC8A /* Framework */,
 				60F688B51B52ABFE00A9EC8A /* TimeManage */,
 				60F688B41B52ABF400A9EC8A /* Habit */,
 				608408DE1B52A8A9001F17FD /* AppDelegate.swift */,
 				608408E41B52A8A9001F17FD /* Main.storyboard */,
 				608408E71B52A8A9001F17FD /* Images.xcassets */,
 				608408E91B52A8A9001F17FD /* LaunchScreen.xib */,
+				60F688C41B52B2EC00A9EC8A /* needYouManage-Bridging-Header.h */,
 				608408DC1B52A8A9001F17FD /* Supporting Files */,
 			);
 			path = needYouManage;
@@ -129,6 +137,23 @@
 				608408E21B52A8A9001F17FD /* TimeManageViewController.swift */,
 			);
 			name = TimeManage;
+			sourceTree = "<group>";
+		};
+		60F688BD1B52B1BB00A9EC8A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				60F688C81B52B35500A9EC8A /* libsqlite3.dylib */,
+				60F688BE1B52B1D000A9EC8A /* FMDB */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		60F688BE1B52B1D000A9EC8A /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				60F688BF1B52B1E200A9EC8A /* src */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +239,7 @@
 				608408E61B52A8A9001F17FD /* Main.storyboard in Resources */,
 				608408EB1B52A8A9001F17FD /* LaunchScreen.xib in Resources */,
 				608408E81B52A8A9001F17FD /* Images.xcassets in Resources */,
+				60F688C01B52B1E200A9EC8A /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +386,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = needYouManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "needYouManage/needYouManage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -370,9 +399,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = needYouManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "needYouManage/needYouManage-Bridging-Header.h";
 			};
 			name = Release;
 		};
