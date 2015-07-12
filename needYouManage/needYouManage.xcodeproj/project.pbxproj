@@ -15,6 +15,7 @@
 		60F688C91B52B35500A9EC8A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F688C81B52B35500A9EC8A /* libsqlite3.dylib */; };
 		60F688CF1B52B87500A9EC8A /* HabitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F688CE1B52B87500A9EC8A /* HabitTableViewController.swift */; };
 		60F688D11B52B89100A9EC8A /* TimeManageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F688D01B52B89100A9EC8A /* TimeManageTableViewController.swift */; };
+		60F688D51B52BCE200A9EC8A /* habit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60F688D41B52BCE200A9EC8A /* habit.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		60F688CA1B52B58100A9EC8A /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		60F688CE1B52B87500A9EC8A /* HabitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTableViewController.swift; sourceTree = "<group>"; };
 		60F688D01B52B89100A9EC8A /* TimeManageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManageTableViewController.swift; sourceTree = "<group>"; };
+		60F688D41B52BCE200A9EC8A /* habit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = habit.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		608408DB1B52A8A9001F17FD /* needYouManage */ = {
 			isa = PBXGroup;
 			children = (
+				60F688D31B52BCCA00A9EC8A /* resource */,
 				60F688BD1B52B1BB00A9EC8A /* Framework */,
 				60F688B51B52ABFE00A9EC8A /* TimeManage */,
 				60F688B41B52ABF400A9EC8A /* Habit */,
@@ -132,6 +135,7 @@
 		60F688B51B52ABFE00A9EC8A /* TimeManage */ = {
 			isa = PBXGroup;
 			children = (
+				60F688D61B52C11400A9EC8A /* cell */,
 				60F688D01B52B89100A9EC8A /* TimeManageTableViewController.swift */,
 			);
 			name = TimeManage;
@@ -143,6 +147,21 @@
 				60F688C81B52B35500A9EC8A /* libsqlite3.dylib */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		60F688D31B52BCCA00A9EC8A /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				60F688D41B52BCE200A9EC8A /* habit.plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		60F688D61B52C11400A9EC8A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				608408E61B52A8A9001F17FD /* Main.storyboard in Resources */,
+				60F688D51B52BCE200A9EC8A /* habit.plist in Resources */,
 				608408EB1B52A8A9001F17FD /* LaunchScreen.xib in Resources */,
 				608408E81B52A8A9001F17FD /* Images.xcassets in Resources */,
 			);
