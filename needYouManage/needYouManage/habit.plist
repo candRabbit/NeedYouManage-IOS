@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>早睡</key>
+	<string>4</string>
+	<key>正能量</key>
+	<string>3</string>
+	<key>运动</key>
+	<integer>2</integer>
+	<key>阅读</key>
+	<integer>1</integer>
+	<key>早起</key>
+	<integer>0</integer>
+</dict>
+</plist>
