@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D6157F71B53540D00997A6E /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157DE1B53540D00997A6E /* FMDatabase+FTS3.m */; };
-		1D6157F81B53540D00997A6E /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157E01B53540D00997A6E /* FMTokenizers.m */; };
-		1D6157F91B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157E41B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m */; };
-		1D6157FA1B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157E61B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift */; };
-		1D6157FB1B53540D00997A6E /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157E71B53540D00997A6E /* FMDatabaseVariadic.swift */; };
-		1D6157FC1B53540D00997A6E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157EA1B53540D00997A6E /* FMDatabase.m */; };
-		1D6157FD1B53540D00997A6E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157EC1B53540D00997A6E /* FMDatabaseAdditions.m */; };
-		1D6157FE1B53540D00997A6E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157EE1B53540D00997A6E /* FMDatabasePool.m */; };
-		1D6157FF1B53540D00997A6E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157F01B53540D00997A6E /* FMDatabaseQueue.m */; };
-		1D6158001B53540D00997A6E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157F31B53540D00997A6E /* FMResultSet.m */; };
 		1D6158031B5358D200997A6E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158021B5358D200997A6E /* Constant.swift */; };
 		1D6158061B535A6400997A6E /* DbUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158051B535A6400997A6E /* DbUtil.swift */; };
 		1D61580B1B535FBE00997A6E /* HabitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61580A1B535FBE00997A6E /* HabitType.swift */; };
 		1D61580D1B53651E00997A6E /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61580C1B53651E00997A6E /* SignInTableViewController.swift */; };
 		1D6158111B53929F00997A6E /* HabitNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158101B53929F00997A6E /* HabitNoteViewController.swift */; };
+		6081833D1B53D6780040DCAA /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183241B53D6780040DCAA /* FMDatabase+FTS3.m */; };
+		6081833E1B53D6780040DCAA /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183261B53D6780040DCAA /* FMTokenizers.m */; };
+		6081833F1B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6081832A1B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.m */; };
+		608183401B53D6780040DCAA /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081832C1B53D6780040DCAA /* FMDatabaseAdditionsVariadic.swift */; };
+		608183411B53D6780040DCAA /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081832D1B53D6780040DCAA /* FMDatabaseVariadic.swift */; };
+		608183421B53D6780040DCAA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183301B53D6780040DCAA /* FMDatabase.m */; };
+		608183431B53D6780040DCAA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183321B53D6780040DCAA /* FMDatabaseAdditions.m */; };
+		608183441B53D6780040DCAA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183341B53D6780040DCAA /* FMDatabasePool.m */; };
+		608183451B53D6780040DCAA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183361B53D6780040DCAA /* FMDatabaseQueue.m */; };
+		608183461B53D6780040DCAA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 608183391B53D6780040DCAA /* FMResultSet.m */; };
 		608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408DE1B52A8A9001F17FD /* AppDelegate.swift */; };
 		608408E61B52A8A9001F17FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608408E41B52A8A9001F17FD /* Main.storyboard */; };
 		608408E81B52A8A9001F17FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608408E71B52A8A9001F17FD /* Images.xcassets */; };
@@ -44,31 +44,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D6157DD1B53540D00997A6E /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
-		1D6157DE1B53540D00997A6E /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
-		1D6157DF1B53540D00997A6E /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
-		1D6157E01B53540D00997A6E /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
-		1D6157E11B53540D00997A6E /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
-		1D6157E31B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
-		1D6157E41B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
-		1D6157E61B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
-		1D6157E71B53540D00997A6E /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
-		1D6157E91B53540D00997A6E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		1D6157EA1B53540D00997A6E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		1D6157EB1B53540D00997A6E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		1D6157EC1B53540D00997A6E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		1D6157ED1B53540D00997A6E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		1D6157EE1B53540D00997A6E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		1D6157EF1B53540D00997A6E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		1D6157F01B53540D00997A6E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		1D6157F11B53540D00997A6E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		1D6157F21B53540D00997A6E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		1D6157F31B53540D00997A6E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		1D6158021B5358D200997A6E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1D6158051B535A6400997A6E /* DbUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbUtil.swift; sourceTree = "<group>"; };
 		1D61580A1B535FBE00997A6E /* HabitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitType.swift; sourceTree = "<group>"; };
 		1D61580C1B53651E00997A6E /* SignInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
 		1D6158101B53929F00997A6E /* HabitNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitNoteViewController.swift; sourceTree = "<group>"; };
+		608183231B53D6780040DCAA /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		608183241B53D6780040DCAA /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		608183251B53D6780040DCAA /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		608183261B53D6780040DCAA /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		608183271B53D6780040DCAA /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		608183291B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		6081832A1B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		6081832C1B53D6780040DCAA /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
+		6081832D1B53D6780040DCAA /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
+		6081832F1B53D6780040DCAA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		608183301B53D6780040DCAA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		608183311B53D6780040DCAA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		608183321B53D6780040DCAA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		608183331B53D6780040DCAA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		608183341B53D6780040DCAA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		608183351B53D6780040DCAA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		608183361B53D6780040DCAA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		608183371B53D6780040DCAA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		608183381B53D6780040DCAA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		608183391B53D6780040DCAA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		608183481B53D6CD0040DCAA /* TyliangPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TyliangPlayground.playground; sourceTree = "<group>"; };
 		608408D91B52A8A9001F17FD /* needYouManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = needYouManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608408DD1B52A8A9001F17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608408DE1B52A8A9001F17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,77 +108,9 @@
 		1D6157D91B5353F700997A6E /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				1D6157DA1B53540D00997A6E /* src */,
+				608183201B53D6780040DCAA /* src */,
 			);
 			name = FMDB;
-			sourceTree = "<group>";
-		};
-		1D6157DA1B53540D00997A6E /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157DB1B53540D00997A6E /* extra */,
-				1D6157E81B53540D00997A6E /* fmdb */,
-			);
-			name = src;
-			path = "../../../Downloads/fmdb-master/src";
-			sourceTree = "<group>";
-		};
-		1D6157DB1B53540D00997A6E /* extra */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157DC1B53540D00997A6E /* fts3 */,
-				1D6157E21B53540D00997A6E /* InMemoryOnDiskIO */,
-				1D6157E51B53540D00997A6E /* Swift extensions */,
-			);
-			path = extra;
-			sourceTree = "<group>";
-		};
-		1D6157DC1B53540D00997A6E /* fts3 */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157DD1B53540D00997A6E /* FMDatabase+FTS3.h */,
-				1D6157DE1B53540D00997A6E /* FMDatabase+FTS3.m */,
-				1D6157DF1B53540D00997A6E /* FMTokenizers.h */,
-				1D6157E01B53540D00997A6E /* FMTokenizers.m */,
-				1D6157E11B53540D00997A6E /* fts3_tokenizer.h */,
-			);
-			path = fts3;
-			sourceTree = "<group>";
-		};
-		1D6157E21B53540D00997A6E /* InMemoryOnDiskIO */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157E31B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.h */,
-				1D6157E41B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m */,
-			);
-			path = InMemoryOnDiskIO;
-			sourceTree = "<group>";
-		};
-		1D6157E51B53540D00997A6E /* Swift extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157E61B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift */,
-				1D6157E71B53540D00997A6E /* FMDatabaseVariadic.swift */,
-			);
-			path = "Swift extensions";
-			sourceTree = "<group>";
-		};
-		1D6157E81B53540D00997A6E /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				1D6157E91B53540D00997A6E /* FMDatabase.h */,
-				1D6157EA1B53540D00997A6E /* FMDatabase.m */,
-				1D6157EB1B53540D00997A6E /* FMDatabaseAdditions.h */,
-				1D6157EC1B53540D00997A6E /* FMDatabaseAdditions.m */,
-				1D6157ED1B53540D00997A6E /* FMDatabasePool.h */,
-				1D6157EE1B53540D00997A6E /* FMDatabasePool.m */,
-				1D6157EF1B53540D00997A6E /* FMDatabaseQueue.h */,
-				1D6157F01B53540D00997A6E /* FMDatabaseQueue.m */,
-				1D6157F11B53540D00997A6E /* FMDB.h */,
-				1D6157F21B53540D00997A6E /* FMResultSet.h */,
-				1D6157F31B53540D00997A6E /* FMResultSet.m */,
-			);
-			path = fmdb;
 			sourceTree = "<group>";
 		};
 		1D6158041B535A4F00997A6E /* util */ = {
@@ -194,6 +127,73 @@
 				1D61580A1B535FBE00997A6E /* HabitType.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		608183201B53D6780040DCAA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				608183211B53D6780040DCAA /* extra */,
+				6081832E1B53D6780040DCAA /* fmdb */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		608183211B53D6780040DCAA /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				608183221B53D6780040DCAA /* fts3 */,
+				608183281B53D6780040DCAA /* InMemoryOnDiskIO */,
+				6081832B1B53D6780040DCAA /* Swift extensions */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		608183221B53D6780040DCAA /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				608183231B53D6780040DCAA /* FMDatabase+FTS3.h */,
+				608183241B53D6780040DCAA /* FMDatabase+FTS3.m */,
+				608183251B53D6780040DCAA /* FMTokenizers.h */,
+				608183261B53D6780040DCAA /* FMTokenizers.m */,
+				608183271B53D6780040DCAA /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		608183281B53D6780040DCAA /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				608183291B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.h */,
+				6081832A1B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		6081832B1B53D6780040DCAA /* Swift extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6081832C1B53D6780040DCAA /* FMDatabaseAdditionsVariadic.swift */,
+				6081832D1B53D6780040DCAA /* FMDatabaseVariadic.swift */,
+			);
+			path = "Swift extensions";
+			sourceTree = "<group>";
+		};
+		6081832E1B53D6780040DCAA /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				6081832F1B53D6780040DCAA /* FMDatabase.h */,
+				608183301B53D6780040DCAA /* FMDatabase.m */,
+				608183311B53D6780040DCAA /* FMDatabaseAdditions.h */,
+				608183321B53D6780040DCAA /* FMDatabaseAdditions.m */,
+				608183331B53D6780040DCAA /* FMDatabasePool.h */,
+				608183341B53D6780040DCAA /* FMDatabasePool.m */,
+				608183351B53D6780040DCAA /* FMDatabaseQueue.h */,
+				608183361B53D6780040DCAA /* FMDatabaseQueue.m */,
+				608183371B53D6780040DCAA /* FMDB.h */,
+				608183381B53D6780040DCAA /* FMResultSet.h */,
+				608183391B53D6780040DCAA /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		608408D01B52A8A9001F17FD = {
@@ -218,6 +218,7 @@
 		608408DB1B52A8A9001F17FD /* needYouManage */ = {
 			isa = PBXGroup;
 			children = (
+				608183481B53D6CD0040DCAA /* TyliangPlayground.playground */,
 				1D6158041B535A4F00997A6E /* util */,
 				60F688D31B52BCCA00A9EC8A /* resource */,
 				60F688BD1B52B1BB00A9EC8A /* Framework */,
@@ -403,24 +404,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6081833F1B53D6780040DCAA /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				608183411B53D6780040DCAA /* FMDatabaseVariadic.swift in Sources */,
 				60F688CF1B52B87500A9EC8A /* HabitTableViewController.swift in Sources */,
-				1D6157FA1B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift in Sources */,
+				608183421B53D6780040DCAA /* FMDatabase.m in Sources */,
+				608183401B53D6780040DCAA /* FMDatabaseAdditionsVariadic.swift in Sources */,
 				608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */,
-				1D6157FC1B53540D00997A6E /* FMDatabase.m in Sources */,
+				608183461B53D6780040DCAA /* FMResultSet.m in Sources */,
 				1D61580B1B535FBE00997A6E /* HabitType.swift in Sources */,
 				60F688D11B52B89100A9EC8A /* TimeManageTableViewController.swift in Sources */,
-				1D6157FF1B53540D00997A6E /* FMDatabaseQueue.m in Sources */,
-				1D6158001B53540D00997A6E /* FMResultSet.m in Sources */,
+				6081833E1B53D6780040DCAA /* FMTokenizers.m in Sources */,
 				1D6158031B5358D200997A6E /* Constant.swift in Sources */,
 				1D6158111B53929F00997A6E /* HabitNoteViewController.swift in Sources */,
-				1D6157FE1B53540D00997A6E /* FMDatabasePool.m in Sources */,
-				1D6157F71B53540D00997A6E /* FMDatabase+FTS3.m in Sources */,
-				1D6157F81B53540D00997A6E /* FMTokenizers.m in Sources */,
+				6081833D1B53D6780040DCAA /* FMDatabase+FTS3.m in Sources */,
 				1D6158061B535A6400997A6E /* DbUtil.swift in Sources */,
-				1D6157FB1B53540D00997A6E /* FMDatabaseVariadic.swift in Sources */,
-				1D6157F91B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
-				1D6157FD1B53540D00997A6E /* FMDatabaseAdditions.m in Sources */,
+				608183441B53D6780040DCAA /* FMDatabasePool.m in Sources */,
+				608183451B53D6780040DCAA /* FMDatabaseQueue.m in Sources */,
 				1D61580D1B53651E00997A6E /* SignInTableViewController.swift in Sources */,
+				608183431B53D6780040DCAA /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,12 +548,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = needYouManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tear/NeedYouManage-IOS/needYouManage/App-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linqinglv/NeedYouManage-IOS/needYouManage/App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -560,11 +562,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = needYouManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tear/NeedYouManage-IOS/needYouManage/App-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linqinglv/NeedYouManage-IOS/needYouManage/App-Bridging-Header.h";
 			};
 			name = Release;
 		};
