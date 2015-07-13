@@ -17,7 +17,11 @@
 		1D6157FE1B53540D00997A6E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157EE1B53540D00997A6E /* FMDatabasePool.m */; };
 		1D6157FF1B53540D00997A6E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157F01B53540D00997A6E /* FMDatabaseQueue.m */; };
 		1D6158001B53540D00997A6E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157F31B53540D00997A6E /* FMResultSet.m */; };
-		1D6158011B53540D00997A6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6157F61B53540D00997A6E /* main.m */; };
+		1D6158031B5358D200997A6E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158021B5358D200997A6E /* Constant.swift */; };
+		1D6158061B535A6400997A6E /* DbUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158051B535A6400997A6E /* DbUtil.swift */; };
+		1D61580B1B535FBE00997A6E /* HabitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61580A1B535FBE00997A6E /* HabitType.swift */; };
+		1D61580D1B53651E00997A6E /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61580C1B53651E00997A6E /* SignInTableViewController.swift */; };
+		1D6158111B53929F00997A6E /* HabitNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6158101B53929F00997A6E /* HabitNoteViewController.swift */; };
 		608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608408DE1B52A8A9001F17FD /* AppDelegate.swift */; };
 		608408E61B52A8A9001F17FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608408E41B52A8A9001F17FD /* Main.storyboard */; };
 		608408E81B52A8A9001F17FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608408E71B52A8A9001F17FD /* Images.xcassets */; };
@@ -60,8 +64,11 @@
 		1D6157F11B53540D00997A6E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		1D6157F21B53540D00997A6E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		1D6157F31B53540D00997A6E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		1D6157F51B53540D00997A6E /* fmdb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmdb_Prefix.pch; sourceTree = "<group>"; };
-		1D6157F61B53540D00997A6E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D6158021B5358D200997A6E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1D6158051B535A6400997A6E /* DbUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbUtil.swift; sourceTree = "<group>"; };
+		1D61580A1B535FBE00997A6E /* HabitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitType.swift; sourceTree = "<group>"; };
+		1D61580C1B53651E00997A6E /* SignInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
+		1D6158101B53929F00997A6E /* HabitNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitNoteViewController.swift; sourceTree = "<group>"; };
 		608408D91B52A8A9001F17FD /* needYouManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = needYouManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608408DD1B52A8A9001F17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608408DE1B52A8A9001F17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +117,6 @@
 			children = (
 				1D6157DB1B53540D00997A6E /* extra */,
 				1D6157E81B53540D00997A6E /* fmdb */,
-				1D6157F41B53540D00997A6E /* sample */,
 			);
 			name = src;
 			path = "../../../Downloads/fmdb-master/src";
@@ -174,13 +180,20 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
-		1D6157F41B53540D00997A6E /* sample */ = {
+		1D6158041B535A4F00997A6E /* util */ = {
 			isa = PBXGroup;
 			children = (
-				1D6157F51B53540D00997A6E /* fmdb_Prefix.pch */,
-				1D6157F61B53540D00997A6E /* main.m */,
+				1D6158051B535A6400997A6E /* DbUtil.swift */,
 			);
-			path = sample;
+			name = util;
+			sourceTree = "<group>";
+		};
+		1D6158091B535FAB00997A6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1D61580A1B535FBE00997A6E /* HabitType.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		608408D01B52A8A9001F17FD = {
@@ -205,6 +218,7 @@
 		608408DB1B52A8A9001F17FD /* needYouManage */ = {
 			isa = PBXGroup;
 			children = (
+				1D6158041B535A4F00997A6E /* util */,
 				60F688D31B52BCCA00A9EC8A /* resource */,
 				60F688BD1B52B1BB00A9EC8A /* Framework */,
 				60F688B51B52ABFE00A9EC8A /* TimeManage */,
@@ -214,6 +228,7 @@
 				608408E71B52A8A9001F17FD /* Images.xcassets */,
 				608408E91B52A8A9001F17FD /* LaunchScreen.xib */,
 				608408DC1B52A8A9001F17FD /* Supporting Files */,
+				1D6158021B5358D200997A6E /* Constant.swift */,
 			);
 			path = needYouManage;
 			sourceTree = "<group>";
@@ -246,7 +261,10 @@
 		60F688B41B52ABF400A9EC8A /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				1D6158091B535FAB00997A6E /* model */,
 				60F688CE1B52B87500A9EC8A /* HabitTableViewController.swift */,
+				1D61580C1B53651E00997A6E /* SignInTableViewController.swift */,
+				1D6158101B53929F00997A6E /* HabitNoteViewController.swift */,
 			);
 			name = Habit;
 			sourceTree = "<group>";
@@ -389,16 +407,20 @@
 				1D6157FA1B53540D00997A6E /* FMDatabaseAdditionsVariadic.swift in Sources */,
 				608408DF1B52A8A9001F17FD /* AppDelegate.swift in Sources */,
 				1D6157FC1B53540D00997A6E /* FMDatabase.m in Sources */,
+				1D61580B1B535FBE00997A6E /* HabitType.swift in Sources */,
 				60F688D11B52B89100A9EC8A /* TimeManageTableViewController.swift in Sources */,
 				1D6157FF1B53540D00997A6E /* FMDatabaseQueue.m in Sources */,
 				1D6158001B53540D00997A6E /* FMResultSet.m in Sources */,
+				1D6158031B5358D200997A6E /* Constant.swift in Sources */,
+				1D6158111B53929F00997A6E /* HabitNoteViewController.swift in Sources */,
 				1D6157FE1B53540D00997A6E /* FMDatabasePool.m in Sources */,
 				1D6157F71B53540D00997A6E /* FMDatabase+FTS3.m in Sources */,
 				1D6157F81B53540D00997A6E /* FMTokenizers.m in Sources */,
+				1D6158061B535A6400997A6E /* DbUtil.swift in Sources */,
 				1D6157FB1B53540D00997A6E /* FMDatabaseVariadic.swift in Sources */,
 				1D6157F91B53540D00997A6E /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
-				1D6158011B53540D00997A6E /* main.m in Sources */,
 				1D6157FD1B53540D00997A6E /* FMDatabaseAdditions.m in Sources */,
+				1D61580D1B53651E00997A6E /* SignInTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

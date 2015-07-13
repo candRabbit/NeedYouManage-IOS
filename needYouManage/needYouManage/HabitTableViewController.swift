@@ -10,21 +10,34 @@ import UIKit
 
 class HabitTableViewController: UITableViewController {
     
-    var dataSource:[String]?
+    var dataSource:[HabitType]?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
         initData()
         
     }
     
     func initData(){
-        var path = NSBundle.mainBundle().pathForResource("habit", ofType: "plist")
-        var datas = NSDictionary(contentsOfFile: path!)! as Dictionary
-        dataSource = [String]()
-        for key in datas.keys{
-            dataSource?.append(key as! String)
+//        var path = NSBundle.mainBundle().pathForResource("habit", ofType: "plist")
+//        var datas = NSDictionary(contentsOfFile: path!)! as Dictionary
+//        dataSource = [String]()
+//        for key in datas.keys{
+//            dataSource?.append(key as! String)
+//        }
+        dataSource = [HabitType]()
+        let appDelegate  = UIApplication.sharedApplication().delegate as! AppDelegate
+        if let rs = appDelegate.getDb().executeQuery("SELECT * FROM habit", withArgumentsInArray: nil) {
+            while rs.next() {
+             let habitType = HabitType()
+                habitType.typeId = rs.intForColumn("id")
+                habitType.typeName = rs.stringForColumn("typeName")
+                dataSource!.append(habitType)
+            }
+        } else {
+        
         }
      
     }
@@ -51,9 +64,9 @@ class HabitTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-
-        cell.textLabel?.text = dataSource![indexPath.row]
-
+        let habitType  = dataSource![indexPath.row]
+         cell.textLabel?.text = habitType.typeName
+       
         return cell
     }
 
@@ -93,15 +106,18 @@ class HabitTableViewController: UITableViewController {
         // Return NO if you do not want the item to be re-orderable.
         return true
     }
+    
 
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+ 
+        let viewController = segue.destinationViewController as! SignInTableViewController
+         let indexPath = self.tableView.indexPathForSelectedRow()
+        viewController.habitType = dataSource![indexPath!.row
+]
+        
     }
-    */
+ 
 
 }

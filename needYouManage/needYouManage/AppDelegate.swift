@@ -12,14 +12,39 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var db:FMDatabase?
     
-    
-
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
+        openDb()
+        createTable()
         return true
+    }
+    
+    func openDb(){
+        let rootPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        let sqlitePath = rootPath.stringByAppendingPathComponent(SQLITE_NAME);
+        db = FMDatabase(path:sqlitePath)
+        if !db!.open(){
+            return
+        }
+    }
+    
+    //创建表
+    func createTable(){
+        if db!.executeUpdate(CREATE_HABIT_TABLE, withArgumentsInArray: nil){
+            var path = NSBundle.mainBundle().pathForResource("habit", ofType: "plist")
+            var datas = NSDictionary(contentsOfFile: path!)! as Dictionary
+            for key in datas.keys{
+            db!.executeUpdate("INSERT INTO habit(typeName) VALUES(?)", withArgumentsInArray: [key])
+            }
+        }
+        db!.executeUpdate(CREATE_HABIT_NOTES, withArgumentsInArray: nil)
+        
+    }
+    
+    // 获取DB 对象
+    func getDb()->FMDatabase{
+        return db!
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -41,7 +66,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        //关闭数据库
+        db!.close()
     }
 
 
